@@ -4,14 +4,11 @@ import util
 import os
 # STATIC_DIR = os.path.abspath('static')
 
-app = Flask(__name__, template_folder='../../BangloreHomePrices/client')
+app = Flask(__name__)
 
 # app = Flask(__name__)
 
 
-@app.route("/")
-def hello():
-    return render_template("app.html")
 
 
 @app.route('/get_location_names', methods=['GET'])
